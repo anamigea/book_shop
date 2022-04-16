@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="483.0" prefWidth="277.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ControllerTableViewGenres">
+   <children>
+      <TableView fx:id="tableGenres" layoutY="8.0" prefHeight="286.0" prefWidth="155.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="colName" prefWidth="154.40000612735747" text="name" />
+        </columns>
+      </TableView>
+      <Button fx:id="backButton" layoutX="14.0" layoutY="435.0" mnemonicParsing="false" onAction="#backScene" text="BACK" />
+   </children>
+</AnchorPane>

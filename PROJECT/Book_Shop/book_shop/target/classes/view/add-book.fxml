@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ControllerAddBook">
+   <children>
+      <Label fx:id="titleLabel" layoutX="32.0" layoutY="24.0" text="Title" visible="false" />
+      <TextField fx:id="titleTextField" layoutX="165.0" layoutY="20.0" promptText="book title" visible="false" />
+      <Button fx:id="backButton" layoutX="20.0" layoutY="361.0" mnemonicParsing="false" onAction="#backScene" text="BACK" />
+      <Label fx:id="nrOfPagesLabel" layoutX="20.0" layoutY="55.0" text="Number of pages" visible="false" />
+      <Label fx:id="availableQuantityLabel" layoutX="18.0" layoutY="89.0" text="Available Quantity" visible="false" />
+      <Label fx:id="priceLabel" layoutX="42.0" layoutY="125.0" text="Price" visible="false" />
+      <Label fx:id="publicationYearLabel" layoutX="23.0" layoutY="159.0" text="Publication Year" visible="false" />
+      <Label fx:id="languageLabel" layoutX="27.0" layoutY="191.0" text="Language" visible="false" />
+      <Label fx:id="publisherLabel" layoutX="31.0" layoutY="228.0" text="Publisher" visible="false" />
+      <TextField fx:id="availableQuantityTextField" layoutX="131.0" layoutY="85.0" promptText="availble quantity" visible="false" />
+      <TextField fx:id="priceTextField" layoutX="125.0" layoutY="121.0" promptText="price" visible="false" />
+      <TextField fx:id="publicationYearTextField" layoutX="125.0" layoutY="155.0" promptText="publication year" visible="false" />
+      <TextField fx:id="languageTextField" layoutX="125.0" layoutY="187.0" promptText="language" visible="false" />
+      <TextField fx:id="publisherTextField" layoutX="125.0" layoutY="224.0" promptText="publisher name" visible="false" />
+      <TextField fx:id="nrOfPagesTextField" layoutX="140.0" layoutY="51.0" promptText="nr. of pages" visible="false" />
+      <Label layoutX="30.0" layoutY="264.0" text="Authors" />
+      <TextField fx:id="firstNameTextField" layoutX="91.0" layoutY="260.0" promptText="first name" />
+      <TextField fx:id="lastNameTextField" layoutX="258.0" layoutY="260.0" promptText="last name" />
+      <Button fx:id="addAuthorButton" layoutX="429.0" layoutY="260.0" mnemonicParsing="false" onAction="#addAuthorClick" text="AddAuthor" />
+      <Button fx:id="finishAuthorsButton" disable="true" layoutX="494.0" layoutY="292.0" mnemonicParsing="false" onAction="#finishAuthorsClick" text="Finish Authors" />
+      <Label fx:id="succes" layoutX="400.0" layoutY="200.0" />
+      <Button fx:id="addAnotherAuthorButton" disable="true" layoutX="359.0" layoutY="292.0" mnemonicParsing="false" onAction="#addAnotherAuthorClick" text="Add Another Author" />
+      <Label fx:id="genresLabel" layoutX="28.0" layoutY="327.0" text="Genres" visible="false" />
+      <TextField fx:id="genreTextField" layoutX="91.0" layoutY="323.0" promptText="genre name" visible="false" />
+      <Button fx:id="addGenreButton" layoutX="281.0" layoutY="323.0" mnemonicParsing="false" onAction="#addGenreClick" text="Add Genre" visible="false" />
+      <Button fx:id="addAnotherGenreButton" disable="true" layoutX="232.0" layoutY="361.0" mnemonicParsing="false" onAction="#addAnotherGenreClick" text="Add Another Genre" visible="false" />
+      <Button fx:id="finishGenresButton" disable="true" layoutX="359.0" layoutY="361.0" mnemonicParsing="false" onAction="#finishGenresClick" text="Finish Genres" visible="false" />
+      <Button fx:id="addBookButton" layoutX="400.0" layoutY="60.0" mnemonicParsing="false" onAction="#addBookClick" text="Add Book to Shop Database" textFill="#d11f1f" visible="false">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
